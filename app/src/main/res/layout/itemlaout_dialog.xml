@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmation..!"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Confirm you order and set \nwith your availability timings....!"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starting time:"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/idstarttime"
+            android:layout_width="80dp"
+            android:textSize="14sp"
+            android:hint="hh:mm:PM"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </EditText>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ending time:"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/idendtime"
+                android:layout_width="80dp"
+                android:hint="hh:mm:PM"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/idbtnconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Confirm  "
+                android:backgroundTint="@color/golden"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

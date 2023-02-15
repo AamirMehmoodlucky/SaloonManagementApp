@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.supportivehands.salonmanagementapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SalonManagementApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".OwnerDashboard.OrderRecieved"
+            android:exported="false" />
+        <activity
+            android:name=".orders.MyOrdersList"
+            android:exported="false" />
+        <activity
+            android:name=".shopservices.CustmerShowServices"
+            android:exported="false" />
+        <activity
+            android:name=".customer.showShops.CustmerShopShow"
+            android:exported="false" />
+        <activity
+            android:name=".customer.CustmerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registeration.customers.RegisterCustmer"
+            android:exported="false" />
+        <activity
+            android:name=".customer.CustmerDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".registeration.customers.LoginCustmer"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminApprovedShop"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminPendingShops"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashbrd"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".shopservices.ShopServices"
+            android:exported="false" />
+        <activity
+            android:name=".activitties.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerDashboard.OwnerSellerDashbrd"
+            android:exported="false"
+            android:label="@string/title_activity_owner_dashbrd"
+            android:theme="@style/Theme.SalonManagementApp.NoActionBar" />
+        <activity
+            android:name=".registeration.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registeration.RegisterFormTwo"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA0fdoCk2QnaUGPWmKokk5q74nnUqVDY6s" />
+
+        <activity
+            android:name=".registeration.pickLocation"
+            android:exported="false"
+            android:label="@string/title_activity_pick_location" />
+        <activity
+            android:name=".registeration.RegisterForm"
+            android:exported="false" />
+        <activity
+            android:name=".registeration.SelectionMode"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

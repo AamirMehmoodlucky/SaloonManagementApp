@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="@color/black"
+    tools:context=".registeration.customers.RegisterCustmer">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/idprofileimge"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/icon_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/golden"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Photo"
+        android:textColor="@color/golden"
+        android:textSize="10sp"
+        android:gravity="center"/>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ownName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:inputType="number"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/paswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password(must greater than 6)"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cpasward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register now"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/golden"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="10dp"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/golden"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

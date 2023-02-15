@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:background="@drawable/layout_bg"
+    android:layout_margin="4dp"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="0.1">
+        <TextView
+            android:id="@+id/id_shopsname"
+            android:text=" Shop Name:"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/icon_shopname"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/id_dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/icon_person"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/golden"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       android:layout_marginStart="5dp"
+        android:layout_weight="4">
+        <TextView
+            android:id="@+id/id_mobile"
+            android:text="mobile no:"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/idadress"
+            android:text="Address"
+            android:textSize="8dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idstatuss"
+            android:text="Pending"
+            android:textColor="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:gravity="center"
+            android:layout_weight="1.2"/>
+        <TextView
+            android:id="@+id/idtrack"
+            android:text="Track me"
+            android:drawableLeft="@drawable/locationicon"
+            android:drawableRight="@drawable/arrowright"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idbtnService"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="View Services"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="10dp"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="@color/black"
+    tools:context=".registeration.customers.LoginCustmer">
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/logo" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogIn Now...!"
+        android:textColor="@color/golden"
+        android:textSize="10sp"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email here"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/paswrd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password here"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/golden"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:cornerRadius="10dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/golden"
+        app:hintTextColor="@color/golden"
+        android:textColorHint="@color/golden"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registenow"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:layout_height="wrap_content"
+            android:text="Register Now...!"
+            android:cursorVisible="false"
+            android:textAlignment="center"
+            android:textCursorDrawable="@color/golden"
+            android:textColorHint="@color/golden"
+            android:textColor="@color/golden"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/golden"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

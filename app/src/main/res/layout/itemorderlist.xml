@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:cardCornerRadius="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8">
+                <ImageView
+                    android:id="@+id/idservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_service"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.7"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/idtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/idprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/idmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mobile seller and buyer"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/idstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mobile seller and buyer"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/idtimeing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mobile seller and buyer"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="2.4">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/idtrck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/golden"
+                    android:text="Track"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/idbottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/idbtnReject"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Reject"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/purple_500"/>
+        <Button
+            android:id="@+id/idbtnAccept"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Accpet"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/green"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

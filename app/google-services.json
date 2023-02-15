@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619813740497",
+    "project_id": "salonmangement",
+    "storage_bucket": "salonmangement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619813740497:android:d355d727c5c546fc010af0",
+        "android_client_info": {
+          "package_name": "com.supportivehands.salonmanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619813740497-efcgec02sk94hjfs0pde089hijpuiend.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9-UxXVoYNr6GEHAg2I3OBCuSla0MRJco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619813740497-efcgec02sk94hjfs0pde089hijpuiend.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
